@@ -1,0 +1,12 @@
+﻿using AutoMapper;
+
+namespace Sample.API.Profiles
+{
+    public class CityProfile : Profile
+    {
+        public CityProfile()
+        {
+            CreateMap<Entities.City, Models.CityDto>().ReverseMap();
+        }
+    }
+}
